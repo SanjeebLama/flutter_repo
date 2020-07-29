@@ -1,6 +1,6 @@
 # flutter_repo
 
-Learning Flutter. Contains various projects related to flutter
+Learning Flutter. Contains various projects and exercises.
 
 # Flutter Resources
 1. Documentation: https://docs.flutter.io/

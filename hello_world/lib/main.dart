@@ -23,42 +23,20 @@ class MyApp extends StatelessWidget {
 class Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      // mainAxisSize: MainAxisSize.min,
-      // mainAxisAlignment: MainAxisAlignment.start,
+    return Row(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(
-                Icons.account_circle,
-                size: 60,
-              ),
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'How you like that?',
-                  style: TextStyle(fontSize: 20),
-                ),
-                Text('Black Pink'),
-              ],
-            ),
-          ],
+        Text(
+          'Login Form',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            Text('2020 Earth, Mars'),
-            Text('I will be there soon'),
-          ],
-        ),
+        // TextField(
+        //   decoration: InputDecoration(
+        //       labelText: 'Email',
+        //       hintText: 'you@email.com',
+        //       icon: Icon(Icons.contact_mail)),
+        // ),
       ],
     );
   }
